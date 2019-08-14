@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -16,10 +16,10 @@
 
 	<!-- CONTAINER -->
 	<div class="container">
-
+		
 		<div class="row">
 			<div class="col-sm-3">
-
+				
 				<!-- CARD -->		
 
 				<div class="card">
@@ -27,7 +27,7 @@
 					<div class="cardContent">
 						<h1 class="text-center">Adrian Cimpean</h1>
 						<h2 class="text-center">Programming Student</h2>
-
+						
 						<!-- SOCIAL MEDIA BUTTONS -->
 
 						<div class="cardSocialMedia">
@@ -45,72 +45,59 @@
 			<div class="col-sm-9">
 				<div class="meniu col-sm-12">
 					<ul>
-						<a href="about.html"><li><i class="fas fa-user"></i> About</li></a>
-						<a href="portfolio.html"><li><i class="far fa-file-alt"></i> Portfolio</li>
-						<a href="contact.php" class="selected"><li><i class="fas fa-map-marker-alt"></i> Contact</li></a>
+						<li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+						<a href="resume.html" class="selected"><li><i class="far fa-file-alt"></i> Portfolio</li></a>
+						<li><a href="contact.php"><i class="fas fa-map-marker-alt"></i> Contact</a></li>
 					</ul>
 				</div>
 
 				<div>&nbsp;</div>
 
 				<!-- CONTENT -->
-				
-<div class="contact col-sm-12">
-	
-	<h2>Contact</h2>
 
-	<p>Hello! With the form below you can contact me. I'll do my best to respond ASAP!</p>
+				<div class="content col-sm-12">
+					<h3><i class="far fa-file-code"></i> My works</h3>
 
-	<div class="clearfix"></div>
+					<div class="row">
+						<hr class="hrContent">
+					</div>
+					<div class="portfolio">
+						<h3>My very first website - Audi</h3>
+						<img src="img/audi.jpg" class="img-responsive" id="webimg">
+						
+						<div class="text">
+						<p>This was my very first website. I created this just for fun because, at that time, I was fan of Audi.</p>
+						<p>It's a simple one, I used only HTML&CSS to build it. It's not the most beautiful site, but for my first one, I like it. </p>
+						</div>
 
-	<form method="POST" action="contact.php">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Name</label>
-    <input type="text" name="nume" class="form-control">
-  </div>
+					</div>
+					<div class="portfolio">
+						<h3>2018 FIFA World Cup - Fixtures</h3>
+						<img src="img/wc.jpg" class="img-responsive" id="webimg">
 
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email</label>
-    <input type="text" name="email" class="form-control" autocomplete="on" placeholder="123abc@email.com">
-  </div>
+						<div class="text">
+						<p>This is my second project that I build for exercising and learning something new.</p>
+						<p>It's still a simple one, being built just with HTML&CSS.
+							
+						</div>
+					</div>
+					<div class="portfolio">
+						<h3>My personal website</h3>
+						<img src="img/personal.jpg" class="" id="webimg">
 
-  <div class="form-group">
-    <label for="exampleInputEmail1">Subject</label>
-    <input type="text" name="subiect" class="form-control" placeholder="Subject">
-  </div>
+						<div class="text">
+						<p>This is the most complex site I've ever built. It's the one you are now browsing on it :)</p>
+						<p>I used HTML&CSS, PHP andjQuery. Building it, I learned a lot of new thing about Web Developing and Designing. It was worth spending time with it!</p>
+						</div>
+					</div>
 
-   <div class="form-group">
-    <label for="exampleInputEmail1">Message</label>
-    <textarea name="mesaj" placeholder="Hello world!"></textarea>
-  </div>
-  
- 
+					
 
-  <button type="submit" name="trimite" class="btn btn-primary">Send</button>
-  <button type ="reset">Reset</button>
-</form>
-
-<?php
-
-$name= $_POST['nume'];
-$email= $_POST['email'];
-$subject= $_POST['subiect'];
-$message= $_POST['mesaj'].' '.$name.' '.$email;
-
-if(isset($_POST['trimite'])){
-mail('adi12_steaua@yahoo.com', $subject, $message);
-echo 'Message successfuly sent! Thank you!';
-}
-
-?>
-
-<div class="clearfix"><br/></div>
-
-</div>
+				</div>
 
 
 
-				
+
 			</div>
 
 			<!-- FOOTER -->
@@ -121,6 +108,8 @@ echo 'Message successfuly sent! Thank you!';
 
 		</div>
 	</div>
+
+</div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
