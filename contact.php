@@ -45,9 +45,10 @@
 			<div class="col-sm-9">
 				<div class="meniu col-sm-12">
 					<ul>
-						<a href="about.html"><li><i class="fas fa-user"></i> About</li></a>
-						<a href="portfolio.html"><li><i class="far fa-file-alt"></i> Portfolio</li>
-						<a href="contact.php" class="selected"><li><i class="fas fa-map-marker-alt"></i> Contact</li></a>
+					<li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+						<li><a href="resume.html"><i class="fas fa-file"></i> Resume</a></li>
+						<li><a href="portfolio.html"><i class="far fa-file-alt"></i> Portfolio</a></li>
+						<li><a href="contact.php" class="selected"><i class="fas fa-map-marker-alt"></i> Contact</a></li>
 					</ul>
 				</div>
 
